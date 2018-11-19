@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+main {
+    font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #003f6b;
+    color: #ffffff;
+}
+
+/* header h1{
+        align-self: center;
+} */
+
+.pad{
+    padding-right: 15px;
+    /* align-self: baseline; */
+}
+
+#headnav{
+    /* background-color: #003f6b; */
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* #myNavbar .navbar-nav>.active>a,  .navbar-nav>.active>a:focus,  .navbar-nav>.active>a:hover{
+    background-color: #00365c;
+} */
+
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.sidenav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.article{
+    padding: 0 45px;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+    height: auto;
+    padding: 15px;
+    }
+    .row.content {height:auto;} 
+}
+
+@media screen and (max-width: 910px) {
+    header h1{
+        font-size: 24px;
+    }
+}
