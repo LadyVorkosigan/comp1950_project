@@ -1,0 +1,80 @@
+/* Main Quiz Page*/
+
+main{
+    width:80%;
+    margin:auto;
+    padding-top: 20px;
+
+}
+.quiz_box{
+    height:50px;
+    width:100%;
+
+    margin-bottom: 15px;
+    border:1px grey solid;
+    border-radius: 6px;
+    border-left: 7px #277455 solid;
+    text-align: left;
+    outline: none;
+    padding-left:15px;
+    padding-top: 12px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.quiz_box:hover{
+    background-color: rgba(179, 179, 179, 0.445);
+}
+
+.quiz_box p{
+   
+    
+    font-size: 17px;
+   font-weight: 700;
+    display: inline;
+}
+
+
+  
+  .quiz_box:after {
+    content: '\002B';
+    color: #033B24;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+    margin-right: 5px;
+    padding-bottom: 15px;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+
+
+
+  .content_hide{
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+  }
+
+ .quiz_box .due{
+      font-size: 13px;
+      float:right;
+      padding-right: 20px;
+      padding-top: 3px;
+  }
+
+  i{
+      color: gray;
+      margin-right: 7px;
+  }
+  
+ .quiz_box .open{
+margin-left: 25px;
+  }
