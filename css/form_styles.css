@@ -7,13 +7,25 @@ main{
     text-align: left;
 }
 form{
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Lato', sans-serif;
     margin-bottom: 15px;
 }
 .form-group{
-    margin-bottom:40px;
+    margin-bottom:35px;
     padding-left:40px;
+}
+
+.form-group label:nth-of-type(2){
+    padding-left:15px;
+}
+.question{
+    width:95%;
+    display:flex;
+    justify-content: space-between;
+    padding:0 5px;
+    background-color: #79c5a7;
+    font-size: 16px;
 }
 .form-control{
     width:100%;
@@ -30,7 +42,7 @@ form{
     margin-left:10px;
 }
 .form-check ,.form-group textarea{
-    margin-left:20px;
+    margin-left:25px;
     font-size: 12px;
 }
 .form-group textarea{
@@ -51,8 +63,10 @@ button{
         padding: 0;
         float:none;
     }
-    h2, h2, h4, h5, h6, .form-check { page-break-after: avoid;}
-    .form-group label{ 	page-break-before: always;	}
-    .form-group{ margin-bottom: 8px; }
+    h2, h3, h4, h5, h6 { page-break-after: avoid;}
+    .form-group:nth-of-type(6n){page-break-before: always;}
+    .form-group{ margin-bottom: 21px; }
     #notPrinted{ display:none;}
+    
+    
 }
