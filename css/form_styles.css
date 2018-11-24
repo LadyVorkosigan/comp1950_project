@@ -40,3 +40,19 @@ form{
 button{
     margin:-10px 0 0 15px;
 }
+/***************print style************/
+@media print{
+    header,nav,footer {
+        display:none;
+    }
+    body{
+        width: auto;
+		margin: 0;
+        padding: 0;
+        float:none;
+    }
+    h2, h2, h4, h5, h6, .form-check { page-break-after: avoid;}
+    .form-group label{ 	page-break-before: always;	}
+    .form-group{ margin-bottom: 8px; }
+    #notPrinted{ display:none;}
+}
