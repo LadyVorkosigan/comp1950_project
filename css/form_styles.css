@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+main{
+    width:80%;
+    margin:auto;
+    padding-top: 20px;
+    text-align: left;
+}
+form{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 15px;
+}
+.form-group{
+    margin-bottom:40px;
+    padding-left:40px;
+}
+.form-control{
+    width:100%;
+}
+#studId{
+    margin: 0 0 30px 20px;
+}
+#studId label{
+    margin:10px 0px;
+}
+
+#studentId{
+    width:200px;
+    margin-left:10px;
+}
+.form-check ,.form-group textarea{
+    margin-left:20px;
+    font-size: 12px;
+}
+.form-group textarea{
+    width:90%;
+    height:100px;
+}
+button{
+    margin:-10px 0 0 15px;
+}
