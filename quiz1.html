@@ -7,153 +7,155 @@
 -->
 <html lang="en">
 
-<head>
-    <title>COMP1950 Web Dev 2 :Quize 1</title>
-    <meta charset="utf-8">
-    <meta name="keywords" content="comp,1950,comp1950,web development and design 2" />
-    <meta name="school" content="School of Computing and Academic Studies" />
-    <meta name="description" content="This hands-on course follows on from COMP 1850 Applied Web Development Level 1. Students who already understand HTML and CSS will explore web development in more depth with new topics and techniques. Participants will gain a deeper understanding of the latest technologies including HTML5 and CSS3 for developing web sites and applications. There is a focus on responsive design and mobile presentation through the use of Media Queries. Adding behavior to web sites using JavaScript frameworks such as jQuery is introduced. Labs and exercises focus on industry standard web development methodology. Students gain experience creating templates for content management systems and presentation. Additional topics will include: leveraging Server Side Includes (SSI) for re-usable code, source control for managing your code, and web-based fonts for professional typography. COMP 1950 is a required course for the BCIT Computing Advanced Web Technologies associate certificates in Applied Web Development, AWD and Web and Mobile Application Development, WMA, as well as an elective in the CST Diploma. COMP 1950 and COMP 2015 are also the prerequisites for COMP 2052 Android and Mobile Application Development Tools. By the end of this course successful students will be able to build dynamic and semantically marked-up content providing Search Engine Optimized (SEO) pages." />
-    <meta name="subject" content="Computer Systems" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style_with_normalize.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/project_styles.css">
-    <link rel="stylesheet" href="css/form_styles.css" media="all">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+    <head>
+        <title>COMP1950 Web Dev 2 :Quize 1</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="comp,1950,comp1950,web development and design 2" />
+        <meta name="school" content="School of Computing and Academic Studies" />
+        <meta name="description" content="This hands-on course follows on from COMP 1850 Applied Web Development Level 1. Students who already understand HTML and CSS will explore web development in more depth with new topics and techniques. Participants will gain a deeper understanding of the latest technologies including HTML5 and CSS3 for developing web sites and applications. There is a focus on responsive design and mobile presentation through the use of Media Queries. Adding behavior to web sites using JavaScript frameworks such as jQuery is introduced. Labs and exercises focus on industry standard web development methodology. Students gain experience creating templates for content management systems and presentation. Additional topics will include: leveraging Server Side Includes (SSI) for re-usable code, source control for managing your code, and web-based fonts for professional typography. COMP 1950 is a required course for the BCIT Computing Advanced Web Technologies associate certificates in Applied Web Development, AWD and Web and Mobile Application Development, WMA, as well as an elective in the CST Diploma. COMP 1950 and COMP 2015 are also the prerequisites for COMP 2052 Android and Mobile Application Development Tools. By the end of this course successful students will be able to build dynamic and semantically marked-up content providing Search Engine Optimized (SEO) pages." />
+        <meta name="subject" content="Computer Systems" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style_with_normalize.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/project_styles.css">
+        <link rel="stylesheet" href="css/form_styles.css" media="all">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
 
-<body>
-    <header class="container-fluid">
-        <a href="http://bcitcomp.ca/">
-            <img src="images/bcit_logo_med.jpg" alt="BCIT logo"></a>
-        <span class="pad"><h1>COMP1950 Thursday Evening Class</h1></span>
-    </header>
-    <nav class="navbar navbar-inverse" id="headnav">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lectures <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="lecture1.html">Lecture 1</a></li>
-                            <li><a href="#">Lecture 2</a></li>
-                            <li><a href="#">Lecture 3</a></li>
-                            <li><a href="#">Lecture 5</a></li>
-                            <li><a href="#">Lecture 5</a></li>
-                            <li><a href="#">Lecture 6</a></li>
-                            <li><a href="#">Lecture 7</a></li>
-                            <li><a href="#">Lecture 8</a></li>
-                            <li><a href="#">Lecture 9</a></li>
-                            <li><a href="#">Lecture 10</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="quiz_page.html">Quizzes</a></li>
-                    <li><a href="https://bcitcomp.ca/1950/resources/">Resources</a></li>
-                    <li><a href="https://bcitcomp.ca/1950/about/">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <h1>Quiz 1</h1>
-        <form class="well well-sm" action="/action_page.php">
-            <div class="form-inline" id="studId">
-                <label for="studentId">Student ID:</label>
-                <input type="text" class="form-control" id="studentId" placeholder="A00123456">
-            </div>
-            <div class="form-group">
-                <label class="question"><span>Question 1</span><span>3 point</span></label>
-                <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <label class="question"><span>Question 2</span><span>1 point</span></label>
-                <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
-                <br />
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                        Lorem ipsum dolor
-                    </label>
+    <body>
+        <header class="container-fluid">
+            <a href="http://bcitcomp.ca/">
+                <img src="images/bcit_logo_med.jpg" alt="BCIT logo"></a>
+            <span class="pad"><h1>COMP1950 Thursday Evening Class</h1></span>
+        </header>
+        <nav class="navbar navbar-inverse" id="headnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Lorem ipsum dolor
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                        Lorem ipsum dolor
-                    </label>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="project1.html">Home</a></li>
+                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lectures <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="lecture1.html">Lecture 1</a></li>
+                                <li><a href="#">Lecture 2</a></li>
+                                <li><a href="#">Lecture 3</a></li>
+                                <li><a href="#">Lecture 5</a></li>
+                                <li><a href="#">Lecture 5</a></li>
+                                <li><a href="#">Lecture 6</a></li>
+                                <li><a href="#">Lecture 7</a></li>
+                                <li><a href="#">Lecture 8</a></li>
+                                <li><a href="#">Lecture 9</a></li>
+                                <li><a href="#">Lecture 10</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="quiz_page.html">Quizzes</a></li>
+                        <li><a href="https://bcitcomp.ca/1950/resources/">Resources</a></li>
+                        <li><a href="https://bcitcomp.ca/1950/about/">About</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="form-group">
-                <label class="question"><span>Question 3</span><span>3 point</span></label>
-                <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <label class="question"><span>Question 4</span><span>1 point</span></label>
-                <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
-                <br />
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                        True
-                    </label>
+        </nav>
+        <main>
+            <h1>Quiz 1</h1>
+            <form class="well well-sm" action="/action_page.php">
+                <div class="form-inline" id="studId">
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" class="form-control" id="studentId" placeholder="A00123456">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        False
-                    </label>
+                <div class="form-group">
+                    <label class="question"><span>Question 1</span><span>3 point</span></label>
+                    <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-            </div>
-            <div class="form-group">
-                <label class="question"><span>Question 5</span><span>2 point</span></label>
-                <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
-                <br />
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                        Lorem ipsum dolor
-                    </label>
+                <div class="form-group">
+                    <label class="question"><span>Question 2</span><span>1 point</span></label>
+                    <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
+                    <br />
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Lorem ipsum dolor
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Lorem ipsum dolor
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Lorem ipsum dolor
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Lorem ipsum dolor
-                    </label>
+                <div class="form-group">
+                    <label class="question"><span>Question 3</span><span>3 point</span></label>
+                    <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <div class="form-check ">
-                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                        Lorem ipsum dolor
-                    </label>
+                <div class="form-group">
+                    <label class="question"><span>Question 4</span><span>1 point</span></label>
+                    <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
+                    <br />
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            True
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            False
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                        Lorem ipsum dolor
-                    </label>
+                <div class="form-group">
+                    <label class="question"><span>Question 5</span><span>2 point</span></label>
+                    <label for="exampleFormControlTextarea1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</label>
+                    <br />
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Lorem ipsum dolor
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Lorem ipsum dolor
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Lorem ipsum dolor
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Lorem ipsum dolor
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <button id="notPrinted" type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </main>
-    <footer class="container-fluid text-center">
-        <p>Footer Text</p>
-    </footer>
-</body>
+                <button id="notPrinted" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br />
+            <div class="text-center"> <a href="#myNavbar">back to top</a></div> <br />
+        </main>
+        <footer class="container-fluid text-center">
+            <p>Footer Text</p>
+        </footer>
+    </body>
 
 </html>
