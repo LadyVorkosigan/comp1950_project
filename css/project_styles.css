@@ -83,6 +83,15 @@ footer {
   padding: 15px;
 }
 
+.cd-top.cd-top--show { 
+visibility: visible;
+opacity: 1;
+} 
+
+.cd-top.cd-top--fade-out { 
+opacity: .5; 
+}
+
 @media screen and (max-width: 1200px) {
     .sidenav {
     height: auto;
