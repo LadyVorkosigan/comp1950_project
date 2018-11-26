@@ -43,18 +43,18 @@ a:hover{
     font-weight:bold;
 }
 #myNavbar .active a:hover{
-    color:white;
+    color:#ffffff;
 }
 
 .sidenav {
-  padding-top: 20px;
+  padding: 20px;
   background-color: #f1f1f1;
   height: 100%;
   width:25%;
   margin-bottom:15px;
 }
 
-.sidenav ul li {
+.sidenav ul, li {
     list-style-type: none;
     margin: 5px;
     padding: 0;
@@ -66,7 +66,7 @@ a:hover{
     padding:5px;
   }
 
-#outcomes ul li{
+#sectionlist ul li{
     text-align: left;
     text-align: justify;
     list-style: circle;
