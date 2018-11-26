@@ -1,16 +1,11 @@
 @charset "utf-8";
 
-.accent{
-  color: #b37d4e  
-}
-
-
 main {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     width: 85%;
-    margin: 0;
     min-width: 400px;
+    padding-top: 20px;
 }
 
 header{
@@ -19,10 +14,6 @@ header{
     background-color: #003f6b;
     color: #ffffff;
 }
-
-/* .affix {
-    right: 0;
-} */
 
 .pad{
     padding-right: 15px;
@@ -33,34 +24,59 @@ header{
     border-radius: 0;
 }
 
-/* #myNavbar .navbar-nav>.active>a,  .navbar-nav>.active>a:focus,  .navbar-nav>.active>a:hover{
-    background-color: #00365c;
-} */
+a{
+    color:#277455;
+}
+a:hover{
+    color:#003f6b;
+    font-weight:bold;
+}
+#myNavbar .navbar-nav>.active>a,  .navbar-nav>.active>a:focus,  .navbar-nav>.active>a:hover{
+    background-color: #222020;
+    font-weight: bold;
+    font-size:16px;
+    cursor: text;
+}
+#myNavbar a:hover{
+    color:#277455;
+    font-size:16px;
+    font-weight:bold;
+}
+#myNavbar .active a:hover{
+    color:white;
+}
 
 .sidenav {
   padding-top: 20px;
   background-color: #f1f1f1;
   height: 100%;
+  width:25%;
+  margin-bottom:15px;
 }
 
-.sidenav ul, li {
+.sidenav ul li {
     list-style-type: none;
     margin: 5px;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 
-/* .article{
-    padding: 0 45px;
-} */
+.sidenav .well {
+    margin-bottom: 0px;
+    padding:5px;
+  }
 
-.gutter{
-    height:100%;
+#outcomes ul li{
+    text-align: left;
+    text-align: justify;
+    list-style: circle;
+}
+
+#email{
+    font-size:14px;
 }
 
 footer {
-  /* position: absolute;
-  bottom: 0; */
   background-color: #555;
   color: white;
   width: 100%;
@@ -75,8 +91,24 @@ footer {
     .row.content {height:auto;} 
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 918px) {
     header h1{
         font-size: 24px;
+    }
+    main {
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .well{ width:100%;}
+    .sidenav{
+        width:100%;
+        background-color:white;
+        margin-top:0px;
+        padding-top:0;
+    }
+    .sidenav .well{
+      margin-bottom: -5px;
     }
 }
