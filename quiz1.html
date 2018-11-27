@@ -19,11 +19,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/project_styles.css">
         <link rel="stylesheet" href="css/form_styles.css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js"></script>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+    
     </head>
 
     <body>
+            <a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up arrow"></i></a>
         <header class="container-fluid">
             <a href="http://bcitcomp.ca/">
                 <img src="images/bcit_logo_med.jpg" alt="BCIT logo"></a>
@@ -148,14 +155,60 @@
                         </label>
                     </div>
                 </div>
-                <button id="notPrinted" type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                
+            </form><button id="notPrinted" type="submit" class="btn btn-primary" >Submit</button>
             <br />
             <div class="text-center"> <a href="#myNavbar">back to top</a></div> <br />
         </main>
         <footer class="container-fluid text-center">
             <p>Footer Text</p>
         </footer>
+
+
+        <script>
+        $('#notPrinted').click(function(){
+            swal({
+  title: 'Do you want to submit quiz?',
+  text: "You won't be able to revert this!",
+  type: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: 'grey',
+  confirmButtonText: 'Yes, send it!'
+}).then((result) => {
+  if (result.value) {
+    swal(
+      'SENT!',
+      'Your anweres were submitted.',
+      'success',
+      'https://unsplash.it/400/200'
+    )
+
+
+setTimeout(function() { 
+    window.location = "./quiz_page_after.html";
+  //your code to be executed after 1 second
+}, 1500);
+   
+
+  }
+})
+        });
+        
+        </script>
+
+<script>$(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });</script>
     </body>
 
 </html>

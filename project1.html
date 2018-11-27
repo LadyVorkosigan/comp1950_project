@@ -18,11 +18,14 @@
         <link rel="stylesheet" href="css/style_with_normalize.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/project_styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     </head>
 
     <body>
+            <a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up arrow"></i></a>
         <header class="container-fluid">
             <a href="http://bcitcomp.ca/">
                 <img src="images/bcit_logo_med.jpg" alt="BCIT logo"></a>
@@ -129,6 +132,18 @@
         <footer class="container-fluid text-center">
             <p>Footer Text</p>
         </footer>
+        <script>$(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });</script>
     </body>
 
 </html>
