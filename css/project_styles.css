@@ -8,14 +8,13 @@ main {
     padding-top: 20px;
     position: relative;
     height: 100%;
-    font-family: 'Raleway', sans-serif;
 }
 
 header{
     display: flex;
     align-items: center;
     background-color: #003f6b;
-    color: #ffffff;
+    color: #fff;
 }
 
 .pad{
@@ -46,7 +45,7 @@ a:hover{
     font-weight:bold;
 }
 #myNavbar .active a:hover{
-    color:#ffffff;
+    color:#fff;
 }
 
 .sidenav {
@@ -81,21 +80,10 @@ a:hover{
 
 footer {
   background-color: #555;
-  color: white;
+  color: #fff;
   width: 100%;
   padding: 15px;
-
 }
-
-.cd-top.cd-top--show { 
-visibility: visible;
-opacity: 1;
-} 
-
-.cd-top.cd-top--fade-out { 
-opacity: .5; 
-}
-
 
 #return-to-top {
     position: fixed;
@@ -159,7 +147,7 @@ opacity: .5;
     .well{ width:100%;}
     .sidenav{
         width:100%;
-        background-color:white;
+        background-color:#fff;
         margin-top:0px;
         padding-top:0;
     }
