@@ -4,8 +4,22 @@ main{
     width:80%;
     margin:auto;
     padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    height: 100%;
 
 }
+@media screen and (min-width: 770px) {
+    .nav{
+        height:60px;
+    }
+  }
+  
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
 .quiz_box{
     height:50px;
     width:100%;
@@ -19,6 +33,7 @@ main{
     padding-top: 12px;
     padding-right: 15px;
     position: relative;
+    font-family: 'Raleway', sans-serif;
 }
 
 .quiz_box:hover{
@@ -49,11 +64,19 @@ main{
 
 .content_hide{
     padding: 0 18px;
+    margin-left: 15px;
+    margin-right: 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
     margin-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.content_hide p {
+    padding-top: 10px;
+
 }
 
 .quiz_box .due{
@@ -70,4 +93,18 @@ i{
   
 .quiz_box .open{
     margin-left: 25px;
+} 
+
+
+
+.green {
+    color:green;
+    font-size: 17px;
+}
+
+.pending{
+    color: gray;
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 10px;
 }
