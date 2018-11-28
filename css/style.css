@@ -645,12 +645,12 @@ a.scrollup:hover{
     padding-left:20px;
   }
 }
-@media screen and (max-width:458px){
+@media screen and (max-width:320px){
   .navbar-brand{
     padding:15px 15px;
   }
   a.navbar-brand span{
-    font-size: 20px;
+    font-size: 18px;
   }
   .menu{
     padding-left:10px;
