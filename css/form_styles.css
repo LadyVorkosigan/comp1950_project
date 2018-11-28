@@ -52,7 +52,7 @@ form{
     height:100px;
 }
 button{
-    margin:-10px 0 0 15px;
+    margin:-10px 0 0px 15px;
 }
 /***************print style************/
 @media print{
@@ -69,8 +69,7 @@ button{
     .form-group:nth-of-type(6n){page-break-before: always;}
     .form-group{ margin-bottom: 21px; }
     #notPrinted{ display:none;}
-    
-    
+    #doNotPrint{ display:none;}
 }
 
 #return-to-top {

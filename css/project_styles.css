@@ -74,7 +74,7 @@ a:hover{
     list-style: circle;
 }
 
-#email{
+.email{
     font-size:14px;
 }
 
@@ -153,5 +153,43 @@ footer {
     }
     .sidenav .well{
       margin-bottom: -5px;
+    }
+}
+@media print{
+    header{
+        background:none;
+    }
+    header img{
+        display:none;
+    }
+    header a{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+    h2, h2, h4, h5, h6{ page-break-after: avoid;}
+    .sidenav{
+        width:100%;
+        font-size: 12px;
+    }
+    .sidenav{
+        page-break-inside : avoid;
+    }
+    #sectionlist ul li{
+        font-size: 12px;
+    }
+    .well{
+        padding:0 5px;
+        page-break-inside : avoid;
+    }
+    .well p{
+        font-size: 12px
+    }
+    .doNotPrint{
+        display:none;
+    }
+    .email{
+        display:none;
     }
 }
