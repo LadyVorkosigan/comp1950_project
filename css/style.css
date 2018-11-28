@@ -46,7 +46,6 @@ hr {
 	margin-top:20px;
 	margin-bottom:40px;
 }
-
 .navbar-brand {
   float: left;
   height: 50px;
@@ -58,10 +57,11 @@ a.navbar-brand span {
 	color:#fff;
 	font-size:35px;	
 }
-.menu {
+
+.navbar-collapse {
 	float:right;
-	
-	padding-left: 650px;
+	padding-right: 15px;
+	padding-left: 15px;
 	overflow-x: visible;
 	-webkit-overflow-scrolling: touch;
 	border-top: 0;
@@ -113,6 +113,7 @@ a.navbar-brand span {
 
 .slider {
 	margin-top:110px;
+	background-color:#;
 	
 }
 .bxslider li {
@@ -595,7 +596,7 @@ ul.social-network li a:hover {
 }
 
 a.scrollup{
-  color:#fff;
+    color:#fff;
 	height:55px;
 	width:55px;
 	font-size:22px;
@@ -613,46 +614,4 @@ a.scrollup:hover{
 	opacity:1;
 	background-color:#36CBD4;
 	color:#fff;;	
-}
-
-@media screen and (min-width:992px) and (max-width: 1199px){
-  .navbar-brand{
-    padding:15px 15px;
-  }
-  .menu{
-    padding-left:450px;
-  }
-}
-@media screen and (min-width:661px) and (max-width: 991px){
-  .navbar-brand{
-    padding:15px 15px;
-  }
-  a.navbar-brand span{
-    font-size: 26px;
-  }
-  .menu{
-    padding-left:250px;
-  }
-}
-@media screen and (max-width:660px){
-  .navbar-brand{
-    padding:15px 15px;
-  }
-  a.navbar-brand span{
-    font-size: 26px;
-  }
-  .menu{
-    padding-left:20px;
-  }
-}
-@media screen and (max-width:320px){
-  .navbar-brand{
-    padding:15px 15px;
-  }
-  a.navbar-brand span{
-    font-size: 16px;
-  }
-  .menu{
-    padding-left:3px;
-  }
 }
