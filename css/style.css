@@ -650,9 +650,9 @@ a.scrollup:hover{
     padding:15px 15px;
   }
   a.navbar-brand span{
-    font-size: 18px;
+    font-size: 16px;
   }
   .menu{
-    padding-left:5px;
+    padding-left:3px;
   }
 }
