@@ -155,7 +155,7 @@
 
 
 setTimeout(function() { 
-    window.location = "./quiz_page_after.html";
+    window.location = "quiz_page_after.php";
   //your code to be executed after 1 second
 }, 1500);
    
