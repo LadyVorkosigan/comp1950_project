@@ -1,0 +1,9 @@
+# .htaccess 
+# ------------
+# the .htaccess file customizes how the server will behave
+# comments in .htaccess begin with a number sign (like this line does)
+# AddType and AddHandler can be instructed to parse .html files as .php
+AddType application/x-httpd-php .html
+AddHandler application/x-httpd-php .html
+
+
