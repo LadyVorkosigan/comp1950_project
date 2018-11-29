@@ -27,6 +27,7 @@
    //include the header
    require_once("includes/header.php");
    //include the navigation
+    $pageId = "Quizpages";
    require_once("includes/navigation.php");
     ?>
         <main>

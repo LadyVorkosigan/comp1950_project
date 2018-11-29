@@ -30,6 +30,7 @@
    //include the header
    require_once("includes/header.php");
    //include the navigation
+        $pageId = "Project1";
    require_once("includes/navigation.php");
     ?>
         <main class="container-fluid text-center">
