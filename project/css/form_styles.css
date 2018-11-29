@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+main{
+    width:80%;
+    margin:auto;
+    padding-top: 20px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+form{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+.form-group{
+    margin-bottom:35px;
+    padding-left:40px;
+}
+
+.form-group label:nth-of-type(2){
+    padding-left:15px;
+}
+.question{
+    width:95%;
+    display:flex;
+    justify-content: space-between;
+    padding:0 5px;
+    background-color: #ccd1cf8c;
+    font-size: 18px;
+}
+.form-control{
+    width:100%;
+}
+#studId{
+    margin: 0 0 30px 20px;
+}
+#studId label{
+    margin:10px 0px;
+}
+
+#studentId{
+    width:200px;
+    margin-left:10px;
+}
+.form-check ,.form-group textarea{
+    margin-left:25px;
+    font-size: 12px;
+}
+.form-group textarea{
+    width:90%;
+    height:100px;
+}
+button{
+    margin:-10px 0 0px 15px;
+}
+/***************print style************/
+@media print{
+    header,nav,footer {
+        display:none;
+    }
+    body{
+        width: auto;
+		margin: 0;
+        padding: 0;
+        float:none;
+    }
+    h2, h3, h4, h5, h6 { page-break-after: avoid;}
+    .form-group:nth-of-type(6n){page-break-before: always;}
+    .form-group{ margin-bottom: 21px; }
+    #notPrinted{ display:none;}
+    #doNotPrint{ display:none;}
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 17px;
+    top: 12px;
+    font-size: 25px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 9px;
+}
+
+i  .arrow{
+    font-size: 19px;
+}
