@@ -113,8 +113,6 @@ a.navbar-brand span {
 
 .slider {
 	margin-top:110px;
-	background-color:#;
-	
 }
 .bxslider li {
 	margin-left:40px;
@@ -134,7 +132,10 @@ a.navbar-brand span {
 	font-size:15px;
 	
 }
-
+.bounceIn p{
+  text-align: left;
+  line-height: 1.2;
+}
 .box {
 	text-align:center;
 }
